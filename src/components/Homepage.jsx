@@ -2,7 +2,12 @@
 
 function Homepage() {
     return (
-        <h1>Sei nella home del blog!</h1>
+        <main className='bg-danger-subtle'>
+            {/* Homepage section */}
+            <section className="container">
+                <h1 className="py-3 m-0">Sei nella home del blog!</h1>
+            </section>
+        </main>
     )
 }
 

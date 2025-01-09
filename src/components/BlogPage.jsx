@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react'
-import PostCard from `./PostCard`
+import PostCard from "./PostCard"
 
 const initialFormData = {
     id: "",
@@ -71,11 +71,6 @@ function BlogPage() {
 
     return (
         <>
-            <header className='bg-danger'>
-                {/* Title */}
-                <h1 className='text-center py-3 m-0'>Blog form multifield</h1>
-            </header>
-
             <main className='bg-danger-subtle'>
                 {/* Filter section */}
                 <section className='container py-4'>
