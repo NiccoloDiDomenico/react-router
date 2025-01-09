@@ -1,4 +1,5 @@
 import { Outlet } from "react-router-dom"
+import MainNav from "./MainNav"
 
 
 function AppLayout() {
@@ -6,11 +7,13 @@ function AppLayout() {
         <>
             <header className='bg-danger'>
                 {/* Title */}
-                <h1 className='text-center py-3 m-0'>Blog form multifield</h1>
+                <h2 className='text-center py-3 m-0'>Il tuo header</h2>
+                {/* Navbar */}
+                <MainNav />
             </header>
             <Outlet></Outlet>
             <footer className="bg-danger">
-                <h3 className="text-center py-3 m-0">Footer</h3>
+                <h3 className="text-center py-3 m-0">Il tuo footer</h3>
             </footer>
         </>
     )
