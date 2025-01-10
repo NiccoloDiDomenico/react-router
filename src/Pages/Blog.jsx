@@ -13,7 +13,7 @@ const tagsList = ["viaggi", "mare", "Italia", "estate", "cucina", "ricette", "It
 
 const apiURL = import.meta.env.VITE_API_URL
 
-function BlogPage() {
+function Blog() {
     // Variabili reattive
     const [postList, setPostList] = useState([])
     const [formData, setFormData] = useState(initialFormData)
@@ -123,4 +123,4 @@ function BlogPage() {
     )
 }
 
-export default BlogPage;
+export default Blog;

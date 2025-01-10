@@ -1,7 +1,10 @@
+import { Link, useParams } from "react-router-dom"
+
 const apiURL = import.meta.env.VITE_API_URL
 
 function PostCard(props) {
     // console.log(props);
+    const id = useParams()
 
     return (
         <div className="card">
@@ -9,7 +12,10 @@ function PostCard(props) {
             <div className="card-body">
                 <h5 className="card-title">{props.post.title}</h5>
                 <p className="card-text">{props.post.content}</p>
-                <button className='btn btn-danger' onClick={props.onCancel}>Cancella</button>
+                <div className="d-flex justify-content-between">
+                    <a className="link-danger" onClick={props.onCancel}>Cancella</a>
+                    <Link className="link-body-emphasis" to={`/Blog/Post/${props.post.id}`}>Dettagli</Link>
+                </div>
             </div>
         </div>
     )

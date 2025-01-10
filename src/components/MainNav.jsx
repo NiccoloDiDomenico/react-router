@@ -4,11 +4,11 @@ function MainNav() {
     const navMenu = [
         {
             path: "/",
-            title: "Homepage"
+            title: "Home"
         },
         {
-            path: "/BlogPage",
-            title: "BlogPage"
+            path: "/Blog",
+            title: "Blog"
         },
         {
             path: "/AboutUs",
@@ -20,8 +20,8 @@ function MainNav() {
         <nav className="navbar bg-danger-subtle">
             <div className="container-fluid justify-content-center">
                 {
-                    navMenu.map((curNav) => (
-                        <NavLink className="navbar-brand" to={curNav.path}>{curNav.title}</NavLink>
+                    navMenu.map((curNav, index) => (
+                        <NavLink key={index} className="navbar-brand" to={curNav.path}>{curNav.title}</NavLink>
                     ))
                 }
             </div>

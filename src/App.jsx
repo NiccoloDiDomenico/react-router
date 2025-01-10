@@ -4,7 +4,8 @@ import AppLayout from "./Layout/AppLayout"
 // Pages
 import Homepage from "./Pages/Homepage"
 import AboutUs from "./Pages/AboutUs"
-import BlogPage from "./Pages/BlogPage"
+import Blog from "./Pages/Blog"
+import PostDetails from "./Pages/PostDetails"
 
 
 function App() {
@@ -12,9 +13,12 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route element={<AppLayout />} >
-          <Route path="/" element={<Homepage />} ></Route>
-          <Route path="/BlogPage" element={<BlogPage />} ></Route>
-          <Route path="/AboutUs" element={<AboutUs />} ></Route>
+          <Route index element={<Homepage />} />
+          <Route path="/Blog" >
+            <Route index element={<Blog />} />
+            <Route path="Post/:id" element={<PostDetails />} />
+          </Route>
+          <Route path="/AboutUs" element={<AboutUs />} />
         </Route>
       </Routes>
     </BrowserRouter>
