@@ -7,6 +7,7 @@ import AboutUs from "./Pages/AboutUs"
 import Blog from "./Pages/Blog"
 import PostDetails from "./Pages/PostDetails"
 import NewPost from "./Pages/NewPost"
+import NotFound from "./Pages/NotFound"
 
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
           </Route>
           <Route path="/NewPost" element={<NewPost />} />
           <Route path="/AboutUs" element={<AboutUs />} />
+          {/* NotFound */}
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
