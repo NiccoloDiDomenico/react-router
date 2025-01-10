@@ -1,10 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 // Layout
-import AppLayout from "./components/AppLayout"
+import AppLayout from "./Layout/AppLayout"
 // Pages
-import Homepage from "./components/Homepage"
-import AboutUs from "./components/AboutUs"
-import BlogPage from "./components/BlogPage"
+import Homepage from "./Pages/Homepage"
+import AboutUs from "./Pages/AboutUs"
+import BlogPage from "./Pages/BlogPage"
 
 
 function App() {

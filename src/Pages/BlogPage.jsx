@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react'
-import PostCard from "./PostCard"
+import PostCard from "../components/PostCard"
 
 const initialFormData = {
     id: "",
