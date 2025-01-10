@@ -6,6 +6,7 @@ import Homepage from "./Pages/Homepage"
 import AboutUs from "./Pages/AboutUs"
 import Blog from "./Pages/Blog"
 import PostDetails from "./Pages/PostDetails"
+import NewPost from "./Pages/NewPost"
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Route index element={<Blog />} />
             <Route path="Post/:id" element={<PostDetails />} />
           </Route>
+          <Route path="/NewPost" element={<NewPost />} />
           <Route path="/AboutUs" element={<AboutUs />} />
         </Route>
       </Routes>

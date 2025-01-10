@@ -11,8 +11,12 @@ function MainNav() {
             title: "Blog"
         },
         {
+            path: "/NewPost",
+            title: "New Post"
+        },
+        {
             path: "/AboutUs",
-            title: "AboutUs"
+            title: "About us"
         }
     ]
 
